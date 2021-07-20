@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply h-screen;
+        @apply font-main;
+        @apply bg-cyan-light;
+    }
+}
+
+@layer components {
+    .header-background {
+        @apply bg-header-mobile bg-cover bg-bottom bg-no-repeat h-1/5 w-full bg-cyan-desaturated;
+    }
+}

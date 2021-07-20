@@ -1,0 +1,22 @@
+$color-header: #5ba4a4;
+$color-background: #effafa;
+$color-filter: #eef6f6;
+$color-dark-cyan: #7b8e8e;
+$color-darker-cyan: #2c3a3a;
+
+:root {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-background;
+}
+
+.header {
+    background: center / cover no-repeat url('../images/bg-header-mobile.svg'), $color-header;
+    width: 100%;
+    height: 20vh;
+}
+
