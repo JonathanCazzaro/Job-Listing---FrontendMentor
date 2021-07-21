@@ -7,11 +7,21 @@
         @apply h-screen;
         @apply font-main;
         @apply bg-cyan-light;
+        @apply text-gray-900;
     }
 }
 
 @layer components {
     .header-background {
         @apply bg-header-mobile bg-cover bg-bottom bg-no-repeat h-1/5 w-full bg-cyan-desaturated;
+    }
+    .keyword {
+        @apply bg-cyan-light p-2 text-cyan-desaturated font-bold text-sm rounded-md;
+    }
+    .base-label {
+        @apply p-2 uppercase text-xs font-bold text-white rounded-full;
+    }
+    .job-ad {
+        @apply relative w-12/14 flex flex-col gap-3 bg-white shadow-2x1-Cyan rounded-md p-4;
     }
 }

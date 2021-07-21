@@ -1,8 +1,8 @@
 module.exports = {
-  purge: {
-    enabled: false,
-    content: ['/public/html/index.html']
-  },
+  mode: 'jit',
+  purge: [
+    './public/html/index.html'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundImage: theme => ({
@@ -10,6 +10,9 @@ module.exports = {
       'header-desktop': "url('/public/images/bgheaderdesktop.svg')"
     }),
     extend: {
+      borderWidth: {
+        '6': '6px'
+      },
       fontFamily: {
         'main': ['Spartan', 'sans-serif']
       },
@@ -22,6 +25,15 @@ module.exports = {
           darker: '#2c3a3a'
         },
       },
+      scale: {
+        '60': '.6'
+      },
+      width: {
+        '12/14': '85.7142857%'
+      },
+      boxShadow: {
+        '2x1-Cyan': '0 25px 50px -12px rgba(91, 164, 164, 0.25)'
+      }
     },
   },
   variants: {
